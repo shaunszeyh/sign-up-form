@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="left">
+      <div class="logo">
+        <img
+          src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+          alt="Odin logo"
+          height="100px"
+        />
+        <h1>ODIN</h1>
+      </div>
+      <div class="footer">Photo by Halie West on Unsplash</div>
+    </div>
+    <div class="right">
+      <div class="title">
+        <h2>
+          Hello there! This is a sign up form but unfortunately you aren't
+          actually signing up for anything. Just have a look around in this
+          glorious site!
+        </h2>
+      </div>
+      <form class="form">
+        <div class="first-name">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" required />
+        </div>
+        <div class="last-name">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" required />
+        </div>
+        <div class="email">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="phone-number">
+          <label for="phone-number">Phone Number</label>
+          <input type="text" id="phone-number" />
+        </div>
+        <div class="password">
+          <label for="password">Enter Password</label>
+          <input type="password" id="password" required />
+          <span class="error" style="visibility: hidden"
+            >Passwords do not match</span
+          >
+        </div>
+        <div class="confirm">
+          <label for="confirm">Confirm Password</label>
+          <input type="password" id="confirm" required />
+        </div>
+
+        <div class="submit">
+          <button id="submit">Create Account</button>
+        </div>
+      </form>
+      <p>Already have an account? Log in <a href="">here</a></p>
+    </div>
+  </body>
+</html>
